@@ -35,6 +35,24 @@ embedding from frame+audio input, while ImageBind is reported on its native
 image-audio retrieval (it was never trained to match the S3D space). It is a
 reference point rather than a strict head-to-head, measured on the same test clips.
 
+### Embedding space
+
+![UMAP of embedding spaces](results/umap_real.png)
+
+*A 2-D UMAP view of the test-set embeddings: (a) image only, (b) audio only,
+(c) our distillation model, (d) the S3D teacher, colored by class. Our model's
+output (c) forms tighter class clusters than the raw unimodal inputs and resembles
+the teacher's structure (d), despite using only one frame plus audio.*
+
+### Learned modality weights (Method 3)
+
+![Per-class modality weights](results/modality_weights_real.png)
+
+*The average audio weight learned for each class by Method 3. The weights vary only
+mildly around equal weighting (range 0.42-0.52, slight visual lean), which is
+consistent with Method 3 not improving over plain distillation: the modality-routing
+signal is real but too weak to help at this data scale.*
+
 ## Trained weights
 
 All five trained checkpoints are available here:
