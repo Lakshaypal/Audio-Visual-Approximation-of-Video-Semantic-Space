@@ -1,0 +1,32 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Dataset cache and raw media (large, regenerable, NOT committed)
+# These are the big embedding/video files the extraction scripts produce.
+data/cache/
+data/raw/
+data/videos/
+data/frames/
+data/audio/
+embeddings/
+
+# Pipeline scratch / extraction outputs (NOT part of the submission)
+av_cache/
+colab2_out/
+failsafe_out/
+ib_upload/
+ib_upload.zip
+kaggle_out/
+merged/
+syts.py
+
+# NOTE: trained weights (checkpoints/) and results/ ARE committed for submission.
+#The dataset embeddings are still excluded by the data/cache/ path rule above.

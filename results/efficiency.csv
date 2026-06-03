@@ -1,0 +1,5 @@
+model,total_params,trainable_params,flops,latency_ms,device
+regression,2102272,2102272,2104832.0,0.2802,mps
+contrastive,2102272,2102272,2104832.0,0.1707,mps
+distillation,3019776,3019776,3016704.0,0.4145,mps
+asymmetric,2757632,2757632,2754560.0,0.5362,mps

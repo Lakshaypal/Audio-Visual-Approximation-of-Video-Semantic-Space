@@ -1,0 +1,22 @@
+# Core (needed for training/eval on cached embeddings)
+torch
+torchvision
+torchaudio
+numpy
+pandas
+tqdm
+
+# Encoders / extraction (run on Mac AFTER real videos)
+ftfy
+regex
+git+https://github.com/openai/CLIP.git
+timm
+transformers
+librosa
+soundfile
+
+# Eval + visualization
+umap-learn
+scikit-learn
+matplotlib
+fvcore

@@ -1,0 +1,5 @@
+# Lint configuration. 100-char lines; pyflakes (F) + pycodestyle (E).
+line-length = 100
+
+[lint]
+select = ["E", "F"]

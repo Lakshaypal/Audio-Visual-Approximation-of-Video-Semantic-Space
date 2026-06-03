@@ -1,0 +1,23 @@
+{
+  "model": "ImageBind (zero-shot)",
+  "role": "Baseline 2 (ceiling)",
+  "training": "none (zero-shot)",
+  "method": "imagebind_zeroshot_av",
+  "N": 264,
+  "space": "ImageBind shared embedding space",
+  "metrics": {
+    "image_to_audio": {
+      "R@1": 34.84848484848485,
+      "R@5": 67.42424242424242,
+      "R@10": 75.75757575757575,
+      "MedR": 3.0,
+      "cos": 0.30060604214668274
+    },
+    "audio_to_image": {
+      "R@1": 38.25757575757576,
+      "R@5": 72.34848484848484,
+      "R@10": 84.0909090909091,
+      "MedR": 2.0
+    }
+  }
+}
