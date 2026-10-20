@@ -1,4 +1,4 @@
-# Audio-Visual Embedding Distillation
+# Audio-Visual Semantic Distillation
 
 Approximating a full-video semantic embedding from a single still frame and the
 clip's audio, instead of processing every frame through a heavy video model.
