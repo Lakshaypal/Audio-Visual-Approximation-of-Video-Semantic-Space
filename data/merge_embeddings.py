@@ -41,6 +41,8 @@ def merge_embeddings(index_path=config.S3D_INDEX, clip_path=config.CLIP_EMB,
             continue
         s3d_path = r.get("embedding_path") or os.path.join(s3d_dir, f"{vid}.pt")
         if not os.path.exists(s3d_path):
+            s3d_path = os.path.join(s3d_dir, f"{vid}.pt")
+        if not os.path.exists(s3d_path):
             dropped["s3d"] += 1
             continue
         video_emb = torch.load(s3d_path)["emb"]
